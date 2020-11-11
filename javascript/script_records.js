@@ -16,15 +16,23 @@ function recibirRespuesta() {
         alert("Ocurrio un problema con la URL.");
 }
 
+function adaptarFecha(fechaMs){
+    var fecha;
+    fecha = new Date(fechaMs);
+    fecha = fecha.getDate() + '/' + fecha.getMonth() + '/' + fecha.getFullYear();
+    return fecha;
+}
+
 function crearTabla(datos) {
     var tabla = document.getElementById('tabla-records');
     for (var i = 0; i < datos.length; i++) {
+        var fecha = adaptarFecha(datos[i].recordDate);
         var fila = `<tr>
 							<td>${datos[i].username}</td>
 							<td>${datos[i].punctuation}</td>
 							<td>${datos[i].cards}</td>
                             <td>${datos[i].disposedTime}</td>
-                            <td>${datos[i].recordDate}</td>
+                            <td>${fecha}</td>
 					  </tr>`
         tabla.innerHTML += fila;
     }
