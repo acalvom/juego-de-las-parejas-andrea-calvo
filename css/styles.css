@@ -77,6 +77,7 @@ legend {
   }
 
   #autor-hora {
+    font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
       font-size: 8pt;
       color:rgb(103, 219, 235);
       margin: 20px;
@@ -84,6 +85,71 @@ legend {
   #autor-juego {
     font-size: 14pt;
     color:rgb(103, 219, 235);
+}
+
+
+/*Neon*/
+#inicio > p {
+    font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-align: center;
+  font-size: 7em;
+  margin: 20px 0 20px 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+p:nth-child(1) a {
+  color: #fff;
+  animation: neon1 1.5s ease-in-out infinite alternate;
+}
+
+p:nth-child(1) a:hover {
+  color: rgb(103, 219, 235);
+  animation: none;
+}
+
+
+
+p a:hover {
+  color: #ffffff;
+}
+/*glow for webkit*/
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px rgb(229, 233, 5), 0 0 70px rgb(229, 233, 5), 0 0 80px rgb(229, 233, 5), 0 0 100px rgb(229, 233, 5), 0 0 150px rgb(229, 233, 5);
+  }
+  to {
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px rgb(229, 233, 5), 0 0 35px rgb(229, 233, 5), 0 0 40px rgb(229, 233, 5), 0 0 50px rgb(229, 233, 5), 0 0 75px rgb(229, 233, 5);
+  }
+}
+
+
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px rgb(240, 241, 168), 0 0 20px rgb(240, 241, 168), 0 0 30px rgb(240, 241, 168), 0 0 40px rgb(229, 233, 5), 0 0 70px rgb(229, 233, 5), 0 0 80px rgb(229, 233, 5), 0 0 100px rgb(229, 233, 5), 0 0 150px rgb(229, 233, 5);
+  }
+  to {
+    text-shadow: 0 0 5px rgb(240, 241, 168), 0 0 10px rgb(240, 241, 168), 0 0 15px rgb(240, 241, 168), 0 0 20px rgb(229, 233, 5), 0 0 35px rgb(229, 233, 5), 0 0 40px rgb(229, 233, 5), 0 0 50px rgb(229, 233, 5), 0 0 75px rgb(229, 233, 5);
+  }
+}
+
+
+/*REEEEEEEEEEESPONSIVE*/
+
+@media (max-width: 650px) {
+  #container {
+    width: 100%;
+  }
+  p {
+    font-size: 3.5em;
+  }
 }
 
 .btn-primary {

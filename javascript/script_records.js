@@ -26,13 +26,12 @@ function adaptarFecha(fechaMs){
 function crearTabla(datos) {
     var tabla = document.getElementById('tabla-records');
     for (var i = 0; i < datos.length; i++) {
-        var fecha = adaptarFecha(datos[i].recordDate);
         var fila = `<tr>
 							<td>${datos[i].username}</td>
 							<td>${datos[i].punctuation}</td>
 							<td>${datos[i].cards}</td>
                             <td>${datos[i].disposedTime}</td>
-                            <td>${fecha}</td>
+                            <td>${adaptarFecha(datos[i].recordDate)}</td>
 					  </tr>`
         tabla.innerHTML += fila;
     }
