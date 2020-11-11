@@ -30,9 +30,9 @@ Clonar el repositorio en el equipo, **mediante consola**:
 - Se muestra un calendario con la hora y la fecha actual.
 - Se muestra la portada del juego en formato neón. Al pinchar en el enlase, el jugador
   es redirigido al canal de YouTube del máster.
-- Se muestra el enlace al perfil de LinkedIn y GitHub de Andrea Calvo 
-- TODAS LAS FUENTES DE LAS QUE SE HAN OBTENIDOS LOS RECURSOS HAN SIDO REFERENCIADOS PARA
-  MANTENER LA PROPIEDAD INTELECTUAL
+- Se muestra el enlace al perfil de LinkedIn y GitHub de Andrea Calvo.
+- **TODAS LAS FUENTES DE LAS QUE SE HAN OBTENIDOS LOS RECURSOS HAN SIDO REFERENCIADOS PARA
+  MANTENER LA PROPIEDAD INTELECTUAL.**
 
 ## Menú de preferencias
 
@@ -48,22 +48,22 @@ Clonar el repositorio en el equipo, **mediante consola**:
 - Dependiendo del tiempo y el número de cartas seleccionado se sumará una puntuación extra
   a la partida:
 
-  -- 20 cartas -> +0 puntos
-  -- 26 cartas -> +25 puntos
-  -- 32 cartas -> +50 puntos
+  - 20 cartas -> +0 puntos
+  - 26 cartas -> +25 puntos
+  - 32 cartas -> +50 puntos
 
-  -- 0 segundos -> +0 puntos
-  -- 150 segundos -> +25 puntos
-  -- 120 segundos -> +50 puntos
-  -- 90 segundos -> +75 puntos
-  -- 60 segundos -> +100 puntos
+  - 0 segundos -> +0 puntos
+  - 150 segundos -> +25 puntos
+  - 120 segundos -> +50 puntos
+  - 90 segundos -> +75 puntos
+  - 60 segundos -> +100 puntos
 
 - Si el tiempo se agota, la puntuación es 0.
 
 ## Menú de récords
 
-- Se realiza una petición a un API Rest solicitando el listado de los 10 mejores resultados 
-obtenidos en el juego.
+- Se realiza una petición a un API Rest solicitando el listado de los 10 mejores resultados
+  obtenidos en el juego.
 
 ## Menú para iniciar sesión
 
