@@ -77,27 +77,46 @@ legend {
     padding: 10px 10px
 }
 
-#inicio > fieldset {
+#inicio {
     height: auto;
-    width: 40%;
-    border: deeppink 2px solid;
+    float: left;
+    align-self: end;
 }
 
 #inicio > img {
     border: pink 5px solid;
     height: auto;
-    max-width: 100%;
+    max-width: 80%;
     display:block;
+    
+
 }
 
+#timedate {
+    font: small-caps lighter 43px/150% "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+    text-align:left;
+    margin: 20px;
+    color:#fff;
+    border-left: 3px solid pink;
+    padding: 20px;
+  }
 
+  #autor-hora {
+      font-size: 8pt;
+      color: pink;
+      margin: 20px;
+  }
+  #autor-juego {
+    font-size: 14pt;
+    color: dodgerblue;
+    margin: 20px;
+}
 .columna-principal {
     background-color: azure;
     width: auto;
     font-size: 12pt;
     text-align: center;
     border: 2px solid deeppink;
-
 }
 
 .columna {
@@ -122,6 +141,7 @@ div#tablero > div {
     background-position: center center;
     width: 79px;
     height: 140px;
+    border-color: deeppink;
     border: 2px solid deeppink;
     float: left;
     padding: 10px;

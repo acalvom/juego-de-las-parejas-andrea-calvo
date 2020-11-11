@@ -10,10 +10,13 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <link rel='stylesheet' type="text/css" href="css/styles.css">
 
+    <!-- Javascript code -->
+    <script src="javascript/script_inicio.js"></script>
+
     <title>Inicio</title>
 </head>
 
-<body>
+<body onLoad="initClock()">
 
     <header>
         <nav class="navbar navbar-inverse">
@@ -32,23 +35,50 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="menu_inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-                        <li><a href="menu_preferencias.html"><span class="glyphicon glyphicon-cog"></span> Preferencias</a></li>
+                        <li><a href="menu_preferencias.html"><span class="glyphicon glyphicon-cog"></span>
+                                Preferencias</a></li>
                         <li><a href="menu_jugar.html"><span class="glyphicon glyphicon-play"></span> Jugar</a></li>
                         <li><a href="menu_records.html"><span class="glyphicon glyphicon-stats"></span> Récords</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="menu_iniciar_sesion.html"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
-                        <li><a href="menu_registro.html"><span class="glyphicon glyphicon-log-in"></span> Registro</a></li>
+                        <li><a href="menu_iniciar_sesion.html"><span class="glyphicon glyphicon-user"></span> Iniciar
+                                Sesión</a></li>
+                        <li><a href="menu_registro.html"><span class="glyphicon glyphicon-log-in"></span> Registro</a>
+                        </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
 
+    <div class="col-sm-5" id="timedate">
+        <a id="mon">January</a>
+        <a id="d">1</a>,
+        <a id="y">0</a><br />
+        <a id="h">12</a> :
+        <a id="m">00</a>:
+        <a id="s">00</a>:
+        <a id="mi">000</a>
+        <div id="autor-hora">
+            <p>Original design from @jasonleewilson</p>
+        </div>
+        <div id="autor-juego">
+            <p>Realizado por Andrea Calvo Moreno</p>
+            <a href="https://www.linkedin.com/in/andrea-calvo-moreno-63a71b115/">LinkedIn -</a>
+            <a href="https://github.com/acalvom/">GitHub</a>
+        </div>
+    </div>
 
-    <div id='inicio'>
-            <img src="images/logo.png" class="img-responsive center-block" alt="Emparejar Cartas">
+
+
+
+    <div class="col-sm-6" id='inicio'>
+
+
+        <img src="images/logo.png" class="img-responsive center-block" alt="Emparejar Cartas">
+
+
     </div>
 
     <!-- jQuery library -->
