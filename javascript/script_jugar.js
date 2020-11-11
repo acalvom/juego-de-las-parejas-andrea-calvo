@@ -64,11 +64,11 @@ function puntuacionExtra() {
     if (tiempoLimite == 150) {
         puntuacion = puntuacion + 25;
     } else if (tiempoLimite == 120) {
-        puntuacion = puntuacion + 75;
-    } else if (tiempoLimite == 90) {
         puntuacion = puntuacion + 50;
+    } else if (tiempoLimite == 90) {
+        puntuacion = puntuacion + 75;
     } else if (tiempoLimite == 60) {
-        puntuacion = puntuacion + 25;
+        puntuacion = puntuacion + 100;
     } else {
         puntuacion = puntuacion;
     }
