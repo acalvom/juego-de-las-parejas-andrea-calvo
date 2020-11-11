@@ -25,7 +25,7 @@ Clonar el repositorio en el equipo, **mediante consola**:
 
 ### :page_with_curl: Desarrollo de la práctica
 
-## Menú de inicio
+#### Menú de inicio
 
 - Se muestra un calendario con la hora y la fecha actual.
 - Se muestra la portada del juego en formato neón. Al pinchar en el enlase, el jugador
@@ -34,17 +34,18 @@ Clonar el repositorio en el equipo, **mediante consola**:
 - **TODAS LAS FUENTES DE LAS QUE SE HAN OBTENIDOS LOS RECURSOS HAN SIDO REFERENCIADOS PARA
   MANTENER LA PROPIEDAD INTELECTUAL.**
 
-## Menú de preferencias
+#### Menú de preferencias
 
 - Por defecto, 20 cartas y sin tiempo límite son las preferencias.
 - El jugador tiene la opción de modificar estos parámetros seleccionando algunas de las
   opciones disponibles en el menú desplegable.
 
-## Menú de juego
+#### Menú de juego
 
 - Al iniciar una partida, el tiempo empieza a correr.
 - Por cada pareja de cartas descubierta, se añadirá al marcador 15 puntos (+15).
 - Por cada pareja fallida, se descontarán 5 puntos (-5).
+- Si el tiempo se agota, la puntuación es 0.
 - Dependiendo del tiempo y el número de cartas seleccionado se sumará una puntuación extra
   a la partida:
 
@@ -58,24 +59,22 @@ Clonar el repositorio en el equipo, **mediante consola**:
   - 90 segundos -> +75 puntos
   - 60 segundos -> +100 puntos
 
-- Si el tiempo se agota, la puntuación es 0.
-
-## Menú de récords
+#### Menú de récords
 
 - Se realiza una petición a un API Rest solicitando el listado de los 10 mejores resultados
   obtenidos en el juego.
 
-## Menú para iniciar sesión
+#### Menú para iniciar sesión
 
 - Permite al usuario iniciar sesión a través de su usuario y contraseña. (EN PROGRESO)
 - Permite visualizar la contraeña si se pincha en el checkbox "Mostrar Contraseña".
 
-## Menú de registro
+#### Menú de registro
 
 - Permite a un usuario registrarse introduciendo su email, su usuario y contraseña. (EN PROGRESO)
 - Valida si las dos contraseñas introducidas coindiden y en caso contrario lo notifica.
 
-## Otros
+#### Otros
 
 - La barra de navegación es adaptativa, es decir, si el ancho de la pantalla se reduce hasta
   alcanzar un ancho mínimo las pestañas se recogen y se agrupan en un desplegable.
