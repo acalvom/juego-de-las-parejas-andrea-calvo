@@ -1,0 +1,155 @@
+.navbar-inverse {
+    background-color: lightpink;
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #337ab7;
+}
+
+.navbar-inverse .navbar-toggle {
+    border-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #337ab7;
+}
+
+.espacio-juego {
+    text-align: center;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    font-size: 12pt;
+    color: dodgerblue;
+    background-color: pink
+}
+
+.conborde_derecha {
+    text-align: end;
+    font-size: 12pt;
+    display: table;
+    margin: auto;
+    margin-top: 25px;
+    grid-auto-columns: auto
+}
+
+.conborde_izquierda {
+    text-align: start;
+    margin: auto;
+    margin-top: 20px;
+    display: table;
+    width: auto;
+}
+
+body {
+    background: #fbffcf;
+}
+
+form {
+    width: 100%;
+}
+
+
+fieldset {
+    border: 2px solid;
+    border-top-color: deeppink;
+    border-bottom-color: deeppink;
+    border-right-color: deeppink;
+    border-left-color: deeppink;
+    background-color: azure;
+    text-align: center;
+    padding-bottom: 10px;
+    width: 60%;
+    margin: auto;
+}
+
+.form-control {
+    text-align: center;
+    width: auto;
+    display: inline;
+    background-color: cornsilk;
+}
+
+legend {
+    font-style: italic;
+    font-size: 12pt;
+    color: deeppink;
+    padding: 10px 10px
+}
+
+#inicio > fieldset {
+    height: auto;
+    width: 40%;
+    border: deeppink 2px solid;
+}
+
+#inicio > img {
+    border: pink 5px solid;
+    height: auto;
+    max-width: 100%;
+    display:block;
+}
+
+
+.columna-principal {
+    background-color: azure;
+    width: auto;
+    font-size: 12pt;
+    text-align: center;
+    border: 2px solid deeppink;
+
+}
+
+.columna {
+    background-color: azure;
+    padding: 14px;
+}
+
+div#tablero {
+    background-color: azure;
+    border: deeppink 2px solid;
+    width: 80%;
+    height: 80vh;
+    padding: 24px;
+    margin: 0px auto;
+    margin-top: 10px;
+}
+
+div#tablero > div {
+    background-image: url(../images/naipes/fondo_espacio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 79px;
+    height: 140px;
+    border: 2px solid deeppink;
+    float: left;
+    padding: 10px;
+    margin: 5px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#parejas_conseguidas, #tiempo_restante, #puntos_actuales {
+    font-size: 14pt;
+    background-color: azure;
+    text-align: center;
+    border: transparent;
+}
+
+#tabla-records {
+    align-self: center;
+    vertical-align: middle;
+}
+
+th {
+    text-align: center;
+    border: 0;
+}
+
+td {
+    color: #337ab7;
+    text-align: center;
+    border: 0;
+}

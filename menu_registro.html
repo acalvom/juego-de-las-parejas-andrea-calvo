@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel='stylesheet' type="text/css" href="css/styles.css">
+
+    <!-- Javascript code -->
+    <script src="javascript/script_registro.js"></script>
+
+    <title>Récords</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-inverse">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a href="#" class="navbar-brand">
+                        <img src="images/cards.png" height="30" alt="Juego de las parejas">
+                    </a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li><a href="menu_inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
+                        <li><a href="menu_preferencias.html"><span class="glyphicon glyphicon-cog"></span> Preferencias</a></li>
+                        <li><a href="menu_jugar.html"><span class="glyphicon glyphicon-play"></span> Jugar</a></li>
+                        <li><a href="menu_records.html"><span class="glyphicon glyphicon-stats"></span> Récords</a></li>
+                    </ul>
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="menu_iniciar_sesion.html"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
+                        <li><a href="menu_registro.html"><span class="glyphicon glyphicon-log-in"></span> Registro</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div id='registro'>
+        <form onsubmit="comprobarRegistro(event)">
+            <fieldset>
+                <legend><strong>Registro</strong><br></legend>
+
+                <div class="form-group row">
+                    <label for="inputUserName" class="col-md-2 col-md-offset-2 col-form-label">Usuario: </label>
+                    <input type="text" class="col-md-2 form-control" id="introducir_usuario" placeholder="Nombre de usuario">
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputEmail" class="col-md-2 col-md-offset-2 col-form-label">Email: </label>
+                    <input type="email" class="col-md-2 form-control" id="introducir_email" placeholder="Email">
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-md-2 col-md-offset-2 col-form-label">Contraseña: </label>
+                    <input type="password" class="col-md-2 form-control" id="introducir_contraseña" placeholder="Contraseña">
+                    <span class="error"><p id="error_contraseña"></p></span>
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-md-2 col-md-offset-2 col-form-label">Repetir contraseña: </label>
+                    <input type="password" class="col-md-2 form-control" id="repetir_contraseña" placeholder="Repetir contraseña">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-10 offset-md-2">
+                        <button id='btn_registro' type="button" class="btn btn-primary" onclick='comprobarRegistro()'>Registrarse </button>
+                    </div>
+                </div>
+
+            </fieldset>
+        </form>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</body>
+
+</html>
