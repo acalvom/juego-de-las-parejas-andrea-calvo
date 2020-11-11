@@ -19,7 +19,6 @@ function comprobarRegistro() {
     } else {
         console.log('contraseña inválida');
         document.getElementById('error_contraseña').innerHTML = 'Las contraseñas deben coincidir';
-        //alert("Las contraseñas deben coincidir")
     }
 }
 

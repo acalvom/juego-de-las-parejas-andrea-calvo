@@ -17,7 +17,6 @@
 </head>
 
 <body>
-
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -35,14 +34,17 @@
                 <div class="collapse navbar-collapse" id="myNavbar">
                     <ul class="nav navbar-nav">
                         <li><a href="menu_inicio.html"><span class="glyphicon glyphicon-home"></span> Inicio</a></li>
-                        <li><a href="menu_preferencias.html"><span class="glyphicon glyphicon-cog"></span> Preferencias</a></li>
+                        <li><a href="menu_preferencias.html"><span class="glyphicon glyphicon-cog"></span>
+                                Preferencias</a></li>
                         <li><a href="menu_jugar.html"><span class="glyphicon glyphicon-play"></span> Jugar</a></li>
                         <li><a href="menu_records.html"><span class="glyphicon glyphicon-stats"></span> Récords</a></li>
                     </ul>
 
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="menu_iniciar_sesion.html"><span class="glyphicon glyphicon-user"></span> Iniciar Sesión</a></li>
-                        <li><a href="menu_registro.html"><span class="glyphicon glyphicon-log-in"></span> Registro</a></li>
+                        <li><a href="menu_iniciar_sesion.html"><span class="glyphicon glyphicon-user"></span> Iniciar
+                                Sesión</a></li>
+                        <li><a href="menu_registro.html"><span class="glyphicon glyphicon-log-in"></span> Registro</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -55,30 +57,33 @@
                 <legend><strong>Iniciar Sesión</strong><br></legend>
                 <div class="form-group row">
                     <label for="inputUserName" class="col-md-2 col-md-offset-2 col-form-label">Usuario: </label>
-                    <input type="text" class="col-md-2 form-control" id="introducir_usuario" placeholder="Nombre de usuario">
+                    <input type="text" class="col-md-2 form-control" id="introducir_usuario"
+                        placeholder="Nombre de usuario">
                 </div>
 
                 <div class="form-group row">
                     <label for="inputPassword" class="col-md-2 col-md-offset-2 col-form-label">Contraseña: </label>
-                    <input type="password" class="col-md-2 form-control" id="introducir_contraseña" placeholder="Contraseña">
+                    <input type="password" class="col-md-2 form-control" id="introducir_contraseña"
+                        placeholder="Contraseña">
                 </div>
 
                 <div class="form-group row">
                     <div class="col-md-10 offset-md-2">
-                        <input type="checkbox" id="mostrar_contrasenia" onclick="mostrarContrasenia()">Mostrar Contraseña
+                        <input type="checkbox" id="mostrar_contrasenia" onclick="mostrarContrasenia()">Mostrar
+                        Contraseña
                     </div>
                 </div>
-                
+
                 <div class="form-group row">
                     <div class="col-md-10 offset-md-2">
-                        <button id='btn_iniciar_sesion' type="button" class="btn btn-primary" onclick='comprobarUsuarioContrasenia()'>Iniciar Sesión</button>
+                        <button id='btn_iniciar_sesion' type="button" class="btn btn-primary"
+                            onclick='comprobarUsuarioContrasenia()'>Iniciar Sesión</button>
                     </div>
                 </div>
 
             </fieldset>
         </form>
     </div>
-
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

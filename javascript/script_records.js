@@ -16,7 +16,7 @@ function recibirRespuesta() {
         alert("Ocurrio un problema con la URL.");
 }
 
-function adaptarFecha(fechaMs){
+function adaptarFecha(fechaMs) {
     var fecha;
     fecha = new Date(fechaMs);
     fecha = fecha.getDate() + '/' + fecha.getMonth() + '/' + fecha.getFullYear();

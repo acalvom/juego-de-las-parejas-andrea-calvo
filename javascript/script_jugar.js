@@ -10,9 +10,7 @@ var cuentaAtras;
 var tiempoActual;
 
 function leerPreferencias() {
-
     var prefecencias = localStorage.getItem("preferencias");
-    // console.log('prefecencias', prefecencias);
     // Comprobar si hay preferencias guardadas y si no las hay, asignar valores por defecto para el numero de cartas y el tiempo
     if (prefecencias == null) {
         numCartas = 20;
@@ -22,9 +20,6 @@ function leerPreferencias() {
         numCartas = prefecenciasArray[0];
         tiempoLimite = prefecenciasArray[1];
     }
-
-    // console.log('numCartas', numCartas);
-    // console.log('tiempoLimite', tiempoLimite);
     tiempoActual = tiempoLimite;
 
 
@@ -45,7 +40,6 @@ function temporizador() {
         if (tiempoActual <= 0) {
             clearInterval(cuentaAtras);
             document.getElementById("tiempo_restante").value = 'FIN';
-            //reiniciarJuego();
             puntuacion = 0;
             alert("¡Has agotado el tiempo!");
         } else {
@@ -84,7 +78,6 @@ function vectorPosiciones() {
     // Asignar numCartas numeros aleatorios diferentes y meterlos en un array valores[]
     var end = 0;
     valores = [];
-    // console.log('numCartas', numCartas);
     while (end !== numCartas) {
         for (let i = 0; i <= (numCartas - 1); i++) {
             var numAleatorio = Math.round(Math.random() * (numCartas - 1));
@@ -94,7 +87,7 @@ function vectorPosiciones() {
             }
         }
     }
-    
+
     // Reasignar los valores del array para que haya parejas de valores. 
     for (let i = 0; i < numCartas; i++) {
         numAleatorio = valores[i];
@@ -102,7 +95,6 @@ function vectorPosiciones() {
             valores[i] = numAleatorio - (numCartas / 2);
         } else {
             valores[i] = numAleatorio;
-
         }
     }
     console.log('valores', valores);
@@ -124,59 +116,36 @@ function nuevaPartida() {
 }
 
 function voltearCarta(carta, valor) {
-    //console.log('carta', carta.id);
-    //console.log('valor', valor);
-
     var cartaElegida = document.getElementById(carta.id)
-    //= "../images/naipes/gf_" + valor + ".png";
-    //console.log('cartaElegida', cartaElegida);
     var urlCarta = 'url(images/naipes/img_' + valor + '.jpg)';
-    //console.log('urlCarta', urlCarta);
-    //cartaElegida.style.background = 'url(images/naipes/img_0.jpg)';
-
 
     cartaElegida.style.backgroundImage = urlCarta;
     cartaElegida.style.backgroundSize = '79px 140px';
 
-
-
     if (cartasSeleccionadas.length == 0) {
         cartasSeleccionadas.push(valor);
         cartasSeleccionadasIds.push(carta.id);
-        //console.log('Una carta seleccionada', cartasSeleccionadas, cartasSeleccionadasIds);
     } else if (cartasSeleccionadas.length == 1) {
         cartasSeleccionadas.push(valor);
         cartasSeleccionadasIds.push(carta.id);
         console.log('Dos cartas seleccionada', cartasSeleccionadas, cartasSeleccionadasIds);
         // COMPARAR LAS CARTAS
-        //console.log('Comparar cartas');
         if (cartasSeleccionadas[0] == cartasSeleccionadas[1]) {
-            //console.log('Las cartas coinciden', cartasVoletadas);
-
             cartasVoletadas = cartasVoletadas + 2;
             puntuacion = puntuacion + 15;
             document.getElementById('parejas_conseguidas').value =
-                 cartasVoletadas;
-            // document.getElementById('parejas_conseguidas').innerText =
-            //     cartasVoletadas;
+                cartasVoletadas;
             document.getElementById('puntos_actuales').value =
                 puntuacion;
             if (cartasVoletadas == numCartas) {
                 clearInterval(cuentaAtras);
                 puntuacionExtra();
-
-
-                //alert("¡HAS COMPLETADO TODAS LAS PAREJAS!");
-                //document.getElementById('tablero').innerHTML = "";
-                // nuevaPartida();
             }
 
             // Vaciar los arrays de las posiciones de las cartas y sus ids
             cartasSeleccionadas = [];
             cartasSeleccionadasIds = [];
         } else {
-            //console.log('Las cartas no coinciden');
-            //console.log(cartasSeleccionadas[0] + '=!' + cartasSeleccionadas[1]);
             puntuacion = puntuacion - 5;
             setTimeout(voltear, 500);
         }
