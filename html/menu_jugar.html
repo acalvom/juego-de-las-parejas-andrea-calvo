@@ -8,12 +8,12 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='stylesheet' type="text/css" href="../css/styles.css">
 
     <!-- Javascript code -->
-    <script src="javascript/script_records.js"></script>
+    <script src="../javascript/script_jugar.js"></script>
 
-    <title>Récords</title>
+    <title>Jugar</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                     </button>
 
                     <a href="#" class="navbar-brand">
-                        <img src="images/cards.png" height="30" alt="Juego de las parejas">
+                        <img src="../images/cards.png" height="30" alt="Juego de las parejas">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -51,21 +51,40 @@
         </nav>
     </header>
 
-    <div id='records'>
-        <fieldset>
-            <legend><strong>Récords</strong><br></legend>
-            <table id='tabla-records' class="table table-striped">
-                <tr class="bg-info">
-                    <th>Usuario</th>
-                    <th>Puntuación</th>
-                    <th>Número de cartas</th>
-                    <th>Tiempo límite</th>
-                    <th>Fecha de partida</th>
-                </tr>
-                <tbody id="tabla-records">
-                </tbody>
-            </table>
-        </fieldset>
+    <div id='juego'>
+        <div id="info-juego" class="col-md-2">
+            <div class="col-md-12 columna-principal">
+                <div id='cartas' class="row">
+                    <div class="col-md-12 columna"><strong>Parejas conseguidas</strong> <br />
+                        <input type='text' id='parejas_conseguidas' size="6" readonly>
+                    </div>
+                </div>
+                <div id='tiempo' class="row">
+                    <div class="col-md-12 columna"><strong>Tiempo restante</strong> <br />
+                        <input type='text' id='tiempo_restante' size="6" readonly>
+                    </div>
+                </div>
+                <div id='puntos' class="row">
+                    <div class="col-md-12 columna"><strong>Puntos actuales</strong> <br />
+                        <input type='text' id='puntos_actuales' size="6" readonly>
+                    </div>
+                </div>
+
+                <div id="autor-hora" class="row">
+
+                    <a href="https://www.zedge.net/ringtones-and-wallpapers/">Imágenes de Zedge -</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <div id='tablero' class="col-md-7 col-md-offset-2">
+        <script>
+            nuevaPartida()
+        </script>
+    </div>
+
     </div>
 
     <!-- jQuery library -->

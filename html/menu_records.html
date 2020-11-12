@@ -8,15 +8,15 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='stylesheet' type="text/css" href="../css/styles.css">
 
     <!-- Javascript code -->
-    <script src="javascript/script_inicio.js"></script>
+    <script src="../javascript/script_records.js"></script>
 
-    <title>Inicio</title>
+    <title>Récords</title>
 </head>
 
-<body onLoad="initClock()">
+<body>
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -28,7 +28,7 @@
                     </button>
 
                     <a href="#" class="navbar-brand">
-                        <img src="images/cards.png" height="30" alt="Juego de las parejas">
+                        <img src="../images/cards.png" height="30" alt="Juego de las parejas">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -51,31 +51,21 @@
         </nav>
     </header>
 
-    <div class="col-sm-5" id="timedate">
-        <a id="mon">January</a>
-        <a id="d">1</a>,
-        <a id="y">0</a><br />
-        <a id="h">12</a> :
-        <a id="m">00</a>:
-        <a id="s">00</a>:
-        <a id="mi">000</a>
-        <div id="autor-hora">
-            <p>Diseño original de @jasonleewilson</p>
-        </div>
-        <div id="autor-juego">
-            <p>Realizado por Andrea Calvo Moreno</p>
-            <a href="https://www.linkedin.com/in/andrea-calvo-moreno-63a71b115/">LinkedIn -</a>
-            <a href="https://github.com/acalvom/">GitHub</a>
-        </div>
-    </div>
-
-    <div class="col-sm-6" id='inicio'>
-        <p>
-            JUEGO <br> DE LAS <br> PAREJAS <br>
-        </p>
-        <div id="autor-hora">
-            <p>Diseño original de @FelixRilling</p>
-        </div>
+    <div id='records'>
+        <fieldset>
+            <legend><strong>Récords</strong><br></legend>
+            <table id='tabla-records' class="table table-striped">
+                <tr class="bg-info">
+                    <th>Usuario</th>
+                    <th>Puntuación</th>
+                    <th>Número de cartas</th>
+                    <th>Tiempo límite</th>
+                    <th>Fecha de partida</th>
+                </tr>
+                <tbody id="tabla-records">
+                </tbody>
+            </table>
+        </fieldset>
     </div>
 
     <!-- jQuery library -->

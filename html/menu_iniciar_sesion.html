@@ -8,12 +8,12 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='stylesheet' type="text/css" href="../css/styles.css">
 
     <!-- Javascript code -->
-    <script src="javascript/script_jugar.js"></script>
+    <script src="../javascript/script_iniciar_sesion.js"></script>
 
-    <title>Jugar</title>
+    <title>Iniciar Sesión</title>
 </head>
 
 <body>
@@ -28,7 +28,7 @@
                     </button>
 
                     <a href="#" class="navbar-brand">
-                        <img src="images/cards.png" height="30" alt="Juego de las parejas">
+                        <img src="../images/cards.png" height="30" alt="Juego de las parejas">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -51,40 +51,38 @@
         </nav>
     </header>
 
-    <div id='juego'>
-        <div id="info-juego" class="col-md-2">
-            <div class="col-md-12 columna-principal">
-                <div id='cartas' class="row">
-                    <div class="col-md-12 columna"><strong>Parejas conseguidas</strong> <br />
-                        <input type='text' id='parejas_conseguidas' size="6" readonly>
+    <div id='iniciar_sesion'>
+        <form onsubmit="comprobarUsuarioContrasenia(event)">
+            <fieldset>
+                <legend><strong>Iniciar Sesión</strong><br></legend>
+                <div class="form-group row">
+                    <label for="inputUserName" class="col-md-2 col-md-offset-2 col-form-label">Usuario: </label>
+                    <input type="text" class="col-md-2 form-control" id="introducir_usuario"
+                        placeholder="Nombre de usuario">
+                </div>
+
+                <div class="form-group row">
+                    <label for="inputPassword" class="col-md-2 col-md-offset-2 col-form-label">Contraseña: </label>
+                    <input type="password" class="col-md-2 form-control" id="introducir_contraseña"
+                        placeholder="Contraseña">
+                </div>
+
+                <div class="form-group row">
+                    <div class="col-md-10 offset-md-2">
+                        <input type="checkbox" id="mostrar_contrasenia" onclick="mostrarContrasenia()">Mostrar
+                        Contraseña
                     </div>
                 </div>
-                <div id='tiempo' class="row">
-                    <div class="col-md-12 columna"><strong>Tiempo restante</strong> <br />
-                        <input type='text' id='tiempo_restante' size="6" readonly>
-                    </div>
-                </div>
-                <div id='puntos' class="row">
-                    <div class="col-md-12 columna"><strong>Puntos actuales</strong> <br />
-                        <input type='text' id='puntos_actuales' size="6" readonly>
+
+                <div class="form-group row">
+                    <div class="col-md-10 offset-md-2">
+                        <button id='btn_iniciar_sesion' type="button" class="btn btn-primary"
+                            onclick='comprobarUsuarioContrasenia()'>Iniciar Sesión</button>
                     </div>
                 </div>
 
-                <div id="autor-hora" class="row">
-
-                    <a href="https://www.zedge.net/ringtones-and-wallpapers/">Imágenes de Zedge -</a>
-                </div>
-            </div>
-
-        </div>
-    </div>
-    </div>
-    <div id='tablero' class="col-md-7 col-md-offset-2">
-        <script>
-            nuevaPartida()
-        </script>
-    </div>
-
+            </fieldset>
+        </form>
     </div>
 
     <!-- jQuery library -->

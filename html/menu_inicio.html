@@ -8,15 +8,15 @@
 
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel='stylesheet' type="text/css" href="css/styles.css">
+    <link rel='stylesheet' type="text/css" href="../css/styles.css">
 
     <!-- Javascript code -->
-    <script src="javascript/script_preferencias.js"></script>
+    <script src="../javascript/script_inicio.js"></script>
 
-    <title>Preferencias</title>
+    <title>Inicio</title>
 </head>
 
-<body>
+<body onLoad="initClock()">
     <header>
         <nav class="navbar navbar-inverse">
             <div class="container-fluid">
@@ -28,7 +28,7 @@
                     </button>
 
                     <a href="#" class="navbar-brand">
-                        <img src="images/cards.png" height="30" alt="Juego de las parejas">
+                        <img src="../images/cards.png" height="30" alt="Juego de las parejas">
                     </a>
                 </div>
                 <div class="collapse navbar-collapse" id="myNavbar">
@@ -51,39 +51,31 @@
         </nav>
     </header>
 
-    <div id='preferencias'>
-        <form>
-            <fieldset>
-                <legend><strong>Preferencias de juego</strong><br></legend>
+    <div class="col-sm-5" id="timedate">
+        <a id="mon">January</a>
+        <a id="d">1</a>,
+        <a id="y">0</a><br />
+        <a id="h">12</a> :
+        <a id="m">00</a>:
+        <a id="s">00</a>:
+        <a id="mi">000</a>
+        <div id="autor-hora">
+            <p>Diseño original de @jasonleewilson</p>
+        </div>
+        <div id="autor-juego">
+            <p>Realizado por Andrea Calvo Moreno</p>
+            <a href="https://www.linkedin.com/in/andrea-calvo-moreno-63a71b115/">LinkedIn -</a>
+            <a href="https://github.com/acalvom/">GitHub</a>
+        </div>
+    </div>
 
-                <div class="form-group row">
-                    <label for="numeroCartas" class="col-md-3 col-md-offset-3 col-form-label">Número de cartas: </label>
-                    <select class="col-md-2 form-control" id="numero_cartas">
-                        <option value='20'>20</option>
-                        <option value='26'>26</option>
-                        <option value='32'>32</option>
-                    </select>
-                </div>
-
-                <div class="form-group row">
-                    <label for="limiteTiempo" class="col-md-3 col-md-offset-3 col-form-label">Límite de tiempo: </label>
-                    <select class="col-md-2 form-control" id="limite_tiempo">
-                        <option value='0'>0</option>
-                        <option value='60'>60</option>
-                        <option value='90'>90</option>
-                        <option value='120'>120</option>
-                        <option value='150'>150</option>
-                    </select>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-md-10 offset-md-2">
-                        <button id='btn_aceptar' type='button' value="Aceptar" class="btn btn-primary"
-                            onclick='aceptarPreferencias()'>Aceptar</button>
-                    </div>
-                </div>
-            </fieldset>
-        </form>
+    <div class="col-sm-6" id='inicio'>
+        <p>
+            JUEGO <br> DE LAS <br> PAREJAS <br>
+        </p>
+        <div id="autor-hora">
+            <p>Diseño original de @FelixRilling</p>
+        </div>
     </div>
 
     <!-- jQuery library -->
