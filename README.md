@@ -49,15 +49,13 @@ Clonar el repositorio en el equipo, **mediante consola**:
 - Dependiendo del tiempo y el número de cartas seleccionado se sumará una puntuación extra
   a la partida:
 
-  - 20 cartas -> +0 puntos
-  - 26 cartas -> +25 puntos
-  - 32 cartas -> +50 puntos
-
-  - 0 segundos -> +0 puntos
-  - 150 segundos -> +25 puntos
-  - 120 segundos -> +50 puntos
-  - 90 segundos -> +75 puntos
-  - 60 segundos -> +100 puntos
+    | Cartas | Tiempo (s) | Puntos extra |
+    | ------ | ---------- | ------------ |
+    | 20     | 0          | +0           |
+    | 26     | 150        | +25          |
+    | 32     | 120        | +50          |
+    | -      | 90         | +75          |
+    | -      | 60         | +100         | S |
 
 #### Menú de récords
 
