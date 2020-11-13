@@ -75,7 +75,7 @@ function puntuacionExtra() {
 }
 
 function vectorPosiciones() {
-    // Asignar numCartas numeros aleatorios diferentes y meterlos en un array valores[]
+    // Asignar numCartas numeros aleatorios diferentes y únicos y meterlos en un array valores[]
     var end = 0;
     valores = [];
     while (end !== numCartas) {
@@ -105,7 +105,7 @@ function nuevaPartida() {
     if (tiempoLimite != 0)
         temporizador();
     else
-        document.getElementById("tiempo_restante").value = 'Sin tiempo';
+        document.getElementById("tiempo_restante").value = 'Sin Tiempo';
 
     vectorPosiciones();
     var output = '';
@@ -113,15 +113,14 @@ function nuevaPartida() {
         output = output + '<div id="carta_' + i + '" onclick="voltearCarta(this,\'' + valores[i] + '\')"></div>';
     }
     document.getElementById('tablero').innerHTML = output;
-}
+}    
 
 function voltearCarta(carta, valor) {
     var cartaElegida = document.getElementById(carta.id)
-    var urlCarta = 'url(images/naipes/img_' + valor + '.jpg)';
+    var urlCarta = 'url(../images/naipes/img_' + valor + '.jpg)';
 
     cartaElegida.style.backgroundImage = urlCarta;
     cartaElegida.style.backgroundSize = '79px 140px';
-
     if (cartasSeleccionadas.length == 0) {
         cartasSeleccionadas.push(valor);
         cartasSeleccionadasIds.push(carta.id);
@@ -160,9 +159,9 @@ function voltear() {
     // Voltear las cartas si se falla la pareja
     var carta1 = document.getElementById(cartasSeleccionadasIds[0]);
     var carta2 = document.getElementById(cartasSeleccionadasIds[1]);
-    carta1.style.background = 'url(images/naipes/fondo_espacio.jpg)';
+    carta1.style.background = 'url(../images/naipes/fondo_espacio.jpg)';
     carta1.innerHTML = "";
-    carta2.style.background = 'url(images/naipes/fondo_espacio.jpg)';
+    carta2.style.background = 'url(../images/naipes/fondo_espacio.jpg)';
     carta2.innerHTML = "";
 
     // Vaciar los arrays de las posiciones de las cartas y sus ids
